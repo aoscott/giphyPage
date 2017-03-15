@@ -25,9 +25,7 @@ var getPresident = "";
 					$("#thePresident").append(president);
 
 					$("#findPresident").val("");
-
-
-					
+	
 				});
 
 				$(document.body).on("click", function() {
@@ -39,7 +37,7 @@ var getPresident = "";
 
 
 					$("button").on("click", function() {
-					var president  = $(this).attr("president");
+					var getPresident  = $(this).attr("president");
 					var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + getPresident +
 					 "&api_key=dc6zaTOxFJmzC&limit=10";
 
